@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Basic CSS styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    main {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .button {
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Demo Website</h1>
+  </header>
+  
+  <main>
+    <p>Hello, welcome to my demo website hosted on GitHub Pages!</p>
+    <button class="button" onclick="changeText()">Click Me!</button>
+    <p id="demoText"></p>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Demo Website</p>
+  </footer>
+  
+  <script>
+    // JavaScript to change text on button click
+    function changeText() {
+      document.getElementById('demoText').textContent = "You clicked the button!";
+    }
+  </script>
+</body>
+</html>
